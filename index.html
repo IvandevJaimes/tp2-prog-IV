@@ -1,5 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Esta descripción ayuda a explicar de qué trata la página -->
+    <meta
+      name="description"
+      content="Café Tacuba, una cafetería artesanal donde podés disfrutar café, pastelería y buenos momentos."
+    />
+    <title>Café Tacuba | Cafetería Artesanal (tp2)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
 <head>
     <meta charset="UTF-8">
@@ -31,23 +42,34 @@
         <!-- Estos enlaces ayudan a que el usuario pueda navegar fácilmente por el contenido -->
         <nav>
 
-            <a href="#inicio">Inicio</a>
+  <body>
+    <header class="header">
+      <!-- Acá pongo el nombre de la cafetería -->
+      <p>Café Tacuba</p>
 
-            <a href="#nosotros">Nosotros</a>
+      <!-- Acá pongo los enlaces para moverme por las distintas partes de la página -->
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
 
-            <a href="#cafes">Nuestros cafés</a>
+        <a href="#nosotros">Nosotros</a>
 
-            <a href="#contacto">Contacto</a>
+        <a href="#cafes">Nuestros cafés</a>
 
-        </nav>
-
+        <a href="#contacto">Contacto</a>
+      </nav>
     </header>
 
 
     <!-- Acá pongo el contenido principal de la página -->
 
     <main>
+      <!-- Esta sección presenta la cafetería -->
+      <section id="inicio" class="hero">
+        <article class="hero-texto">
+          <!-- Este es el título de toda la página -->
+          <h1>Un buen café comienza con un buen momento</h1>
 
+          <p>Cafetería artesanal</p>
         <!-- Esta sección presenta la cafetería y explica de qué trata el sitio -->
         <!-- Acá uso contenido relacionado con café y cafetería para que la página tenga información clara -->
 
@@ -105,64 +127,107 @@
                     en cada visita.
                 </p>
 
-            </article>
+          <p>
+            En Café Tacuba creemos que una taza de café puede transformar
+            cualquier momento del día.
+          </p>
 
-        </section>
+          <!-- Este enlace lleva a la parte donde mostramos los cafés -->
+          <a href="#cafes">Conocé nuestros cafés</a>
+        </article>
 
+        <!-- Acá muestro una imagen relacionada con la cafetería -->
+        <img src="img/cafe.JPG" alt="Taza de café artesanal de Café Tacuba" />
+      </section>
 
+      <!-- Esta sección explica un poco sobre la cafetería -->
+      <section id="nosotros" class="nosotros">
+        <article>
+          <h2>Sobre nosotros</h2>
         <!-- Esta sección muestra algunos cafés del menú -->
         <!-- Acá uso palabras relacionadas con los productos que ofrece la cafetería -->
 
         <section>
 
-            <h2>Nuestro menú</h2>
+          <p>
+            Café Tacuba nació como un espacio pensado para disfrutar de un buen
+            café, productos artesanales y momentos compartidos.
+          </p>
 
-            <p>Elegí tu café favorito</p>
+          <p>
+            Seleccionamos cuidadosamente nuestros ingredientes para ofrecer una
+            experiencia sencilla y agradable en cada visita.
+          </p>
+        </article>
+      </section>
 
+      <!-- Esta sección muestra algunos cafes -->
+      <section id="cafes" class="menu">
+        <h2>Nuestro menú</h2>
 
+        <p>Elegí tu café favorito</p>
             <!-- Acá pongo cada producto dentro de un article porque cada uno tiene su propio contenido -->
 
             <article>
 
-                <img src="img/latte.webp"
-                    alt="Café latte servido en una taza">
+        <!-- aqui pongo cada producto dentro de un article porque cada uno tiene su propio contenido -->
+        <div class="menu-tarjetas">
+          <article class="producto">
+            <img src="img/latte.webp" alt="Café latte servido en una taza" />
 
+            <h3>Café Latte</h3>
                 <!-- Acá uso un h3 porque es el título de este producto -->
 
                 <h3>Café Latte</h3>
 
-                <p>
-                    Café espresso acompañado de leche
-                    caliente y espuma.
-                </p>
+            <p>Café espresso acompañado de leche caliente y espuma.</p>
 
-                <p>$4500</p>
+            <p class="precio">$4500</p>
+          </article>
 
-            </article>
+          <article class="producto">
+            <img
+              src="img/cappuccino.webp"
+              alt="Cappuccino servido en una taza"
+            />
 
+            <h3>Cappuccino</h3>
 
-            <article>
+            <p>Una combinación equilibrada de café, leche y espuma.</p>
 
-                <img src="img/cappuccino.webp"
-                    alt="Cappuccino servido en una taza">
+            <p class="precio">$6800</p>
+          </article>
 
-                <h3>Cappuccino</h3>
+          <article class="producto">
+            <img
+              src="img/americano.webp"
+              alt="Café americano servido en una taza"
+            />
 
-                <p>
-                    Una combinación equilibrada de café,
-                    leche y espuma.
-                </p>
+            <h3>Café Americano</h3>
 
-                <p>$6800</p>
+            <p>Un café intenso y aromático para comenzar el día.</p>
 
-            </article>
+            <p class="precio">$6200</p>
+          </article>
+        </div>
+      </section>
 
+      <!-- Esta sección muestra una especialidad de la cafetería -->
+      <section class="especialidad">
+        <article>
+          <div class="especialidad-texto">
+            <h2>Especialidad de la casa</h2>
 
-            <article>
+            <h3>Brownie de chocolate</h3>
 
-                <img src="img/americano.webp"
-                    alt="Café americano servido en una taza">
+            <p>
+              Nuestro brownie artesanal es el acompañamiento perfecto para una
+              tarde de café.
+            </p>
 
+            <a href="#contacto">Visitanos</a>
+          </div>
                 <h3>Café Americano</h3>
 
                 <p>
@@ -205,8 +270,14 @@
 
         </section>
 
+          <img src="img/brownie.jpg" alt="Brownie artesanal de chocolate" />
+        </article>
+      </section>
     </main>
 
+    <!-- aqui pongo la información final de la página -->
+    <footer id="contacto">
+      <h2>Café Tacuba</h2>
 
     <!-- Acá pongo la información final de la página -->
     <!-- El footer contiene información útil para el usuario y datos de contacto -->
@@ -219,16 +290,24 @@
             Café artesanal y buenos momentos.
         </p>
 
+      <p>Café artesanal y buenos momentos.</p>
 
+      <!-- aqui pongo la dirección del lugar -->
+      <h3>Encontranos</h3>
         <!-- Acá pongo la dirección del lugar -->
 
         <h3>Encontranos</h3>
 
-        <p>Av. siempre viva 123</p>
+      <p>Av. siempre viva 123</p>
 
-        <p>San Miguel de Tucumán</p>
+      <p>San Miguel de Tucumán</p>
 
+      <!-- aqui pongo los datos para comunicarse con la cafetería -->
+      <h3>Contacto</h3>
 
+      <p>chris.asakura11@gmail.com</p>
+
+      <p>3816609713</p>
         <!-- Acá pongo los datos para comunicarse con la cafetería -->
 
         <h3>Contacto</h3>
@@ -244,8 +323,8 @@
             2026 Café Tacuba - Todos los derechos reservados
         </p>
 
+      <!-- Esto indica los derechos de la página -->
+      <p class="copyright">2026 Café Tacuba - Todos los derechos reservados</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
